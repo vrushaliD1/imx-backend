@@ -1,59 +1,24 @@
 {
-  "name": "imxkaijuzfinal",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@craco/craco": "^6.4.0",
-    "@imtbl/imx-contracts": "^1.0.0",
-    "@imtbl/imx-sdk": "^1.3.3",
-    "@openzeppelin/contracts": "^4.3.3",
-    "@testing-library/jest-dom": "^5.15.0",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "@truffle/hdwallet-provider": "^1.6.0",
-    "axios": "^0.24.0",
-    "body-parser": "^1.19.0",
-    "concurrently": "^6.4.0",
-    "daisyui": "^1.16.2",
-    "express": "^4.17.1",
-    "fs": "0.0.1-security",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^6.0.2",
-    "react-scripts": "4.0.3",
-    "react-scroll": "^1.8.4",
-    "truffle-plugin-verify": "^0.5.18",
-    "web-vitals": "^1.1.2",
-    "web3": "^1.6.1"
-  },
+  "name": "imx-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject",
-    "dev": "concurrently \"node server.js\" \"npm run start\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrushaliD1/imx-backend.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vrushaliD1/imx-backend/issues"
   },
-  "devDependencies": {
-    "autoprefixer": "^9.8.8",
-    "postcss": "^7.0.39",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+  "homepage": "https://github.com/vrushaliD1/imx-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
   }
 }
