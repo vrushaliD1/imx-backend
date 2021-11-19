@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 app.post("/check-address", function (req, res) {
   let address = req.body.address;
   if (whitelistArray.includes(address.toLowerCase())) {
-    res.send(true);
+    res.send(req.body.address);
   } else {
     res.send(false);
   }
