@@ -31,9 +31,9 @@ app.post("/check-address", function (req, res) {
   let address = req.body.address;
   // console.log(whitelistArrayCopy)
   for (let i = 0; i < whitelistArray.length; i++) {
-    if (whitelistArray[i] == '0xb00052bB9842507E64a6AF1112f3aeaEEaFfF0C0'.toLowerCase()) {
+    if (whitelistArray[i] == address.toLowerCase()) {
       res.send(whitelistArrayCopy[i])
-      break;
+      return;
     }
     else {
       continue;
@@ -43,6 +43,6 @@ app.post("/check-address", function (req, res) {
 });
 
 
-app.listen(5000, () => {
+app.listen(process.env.port || 5000, () => {
   console.log("Listening on port 5000");
 });
